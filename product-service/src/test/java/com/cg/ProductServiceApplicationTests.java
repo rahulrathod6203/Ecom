@@ -1,4 +1,4 @@
-package com.cg.product_service;
+package com.cg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

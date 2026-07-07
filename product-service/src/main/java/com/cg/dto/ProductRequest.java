@@ -1,4 +1,4 @@
-package com.cg.product_service.dto;
+package com.cg.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

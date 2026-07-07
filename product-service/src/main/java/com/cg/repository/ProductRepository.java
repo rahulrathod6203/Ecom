@@ -1,6 +1,6 @@
-package com.cg.product_service.repository;
+package com.cg.repository;
 
-import com.cg.product_service.model.Product;
+import com.cg.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

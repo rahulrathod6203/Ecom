@@ -1,4 +1,4 @@
-package com.cg.product_service.dto;
+package com.cg.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;

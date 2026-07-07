@@ -1,9 +1,7 @@
-package com.cg.product_service;
+package com.cg;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class ProductServiceApplication {

@@ -1,13 +1,12 @@
-package com.cg.product_service.service;
+package com.cg.service;
 
-import com.cg.product_service.dto.ProductRequest;
-import com.cg.product_service.dto.ProductResponse;
-import com.cg.product_service.mapper.ProductMapper;
-import com.cg.product_service.model.Product;
-import com.cg.product_service.repository.ProductRepository;
+import com.cg.dto.ProductRequest;
+import com.cg.dto.ProductResponse;
+import com.cg.mapper.ProductMapper;
+import com.cg.model.Product;
+import com.cg.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

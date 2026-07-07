@@ -1,8 +1,8 @@
-package com.cg.product_service.controller;
+package com.cg.controller;
 
-import com.cg.product_service.dto.ProductRequest;
-import com.cg.product_service.dto.ProductResponse;
-import com.cg.product_service.service.ProductService;
+import com.cg.dto.ProductRequest;
+import com.cg.dto.ProductResponse;
+import com.cg.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

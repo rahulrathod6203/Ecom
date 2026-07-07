@@ -1,4 +1,4 @@
-package com.cg.product_service.model;
+package com.cg.model;
 
 import jakarta.persistence.*;
 import lombok.*;

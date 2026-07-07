@@ -1,4 +1,4 @@
-package com.cg.product_service.controller;
+package com.cg.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,9 +1,9 @@
-package com.cg.product_service.mapper;
+package com.cg.mapper;
 
 
-import com.cg.product_service.dto.ProductRequest;
-import com.cg.product_service.dto.ProductResponse;
-import com.cg.product_service.model.Product;
+import com.cg.dto.ProductRequest;
+import com.cg.dto.ProductResponse;
+import com.cg.model.Product;
 import org.springframework.stereotype.Component;
 
 @Component
