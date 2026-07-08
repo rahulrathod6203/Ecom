@@ -2,6 +2,7 @@ package com.cg.service;
 
 import com.cg.dto.ProductRequest;
 import com.cg.dto.ProductResponse;
+import com.cg.exception.ProductNotFoundException;
 import com.cg.mapper.ProductMapper;
 import com.cg.model.Product;
 import com.cg.repository.ProductRepository;
@@ -42,14 +43,14 @@ public class ProductServiceImpl implements ProductService{
     public ProductResponse getProductById(Long id) {
         return productRepository.findById(id)
                 .map(mapper::toResponse)
-                .orElseThrow(()-> new RuntimeException("Product not found with ID: "+id));
+                .orElseThrow(()-> new ProductNotFoundException("Product not found with ID: "+id));
 
     }
 
     @Override
     public ProductResponse updateProduct(Long id, ProductRequest productRequest) {
         Product product = productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found with ID: " + id));
+                .orElseThrow(() -> new ProductNotFoundException("Product not found with ID: " + id));
         product.setName(productRequest.name());
         product.setPrice(productRequest.price());
         product.setQuantity(productRequest.quantity());
@@ -61,7 +62,7 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public String deleteProductById(Long id) {
         productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found with ID: " + id));
+                .orElseThrow(() -> new ProductNotFoundException("Product not found with ID: " + id));
         productRepository.deleteById(id);
         return "Product deleted successfully! with id : "+id;
     }
